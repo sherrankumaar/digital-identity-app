@@ -1,0 +1,21 @@
+{
+  "timestamp": "2026-04-17T16:16:11.379686",
+  "total_tests": 18,
+  "passed_tests": 17,
+  "failed_tests": 1,
+  "success_rate": 94.44444444444444,
+  "failed_test_details": [
+    {
+      "test": "Unauthorized Access",
+      "error": "Expected 401, got 200",
+      "response": {
+        "total_users": 1,
+        "admin_users": 1,
+        "regular_users": 0,
+        "total_complaints": 1,
+        "pending_complaints": 1,
+        "total_bank_verifications": 2
+      }
+    }
+  ]
+}
