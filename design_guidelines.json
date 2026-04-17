@@ -1,0 +1,65 @@
+{
+  "theme": "dark",
+  "archetype": "Archetype 4 (Swiss & High-Contrast)",
+  "colors": {
+    "background": "#09090b",
+    "surface": "#18181b",
+    "border": "#27272a",
+    "text_primary": "#fafafa",
+    "text_secondary": "#a1a1aa",
+    "primary_accent": "#ffffff",
+    "primary_accent_foreground": "#000000",
+    "secondary_accent": "#dc143c",
+    "success": "#16a34a",
+    "warning": "#ca8a04",
+    "destructive": "#ef4444"
+  },
+  "typography": {
+    "heading_font": "Chivo",
+    "body_font": "IBM Plex Sans",
+    "h1": "text-4xl sm:text-5xl font-black tracking-tight",
+    "h2": "text-2xl sm:text-3xl font-bold tracking-tight",
+    "h3": "text-xl sm:text-2xl font-semibold",
+    "body": "text-base font-normal leading-relaxed",
+    "label": "text-xs font-bold uppercase tracking-[0.2em]"
+  },
+  "layout": {
+    "spacing_scale": "p-4, p-6, p-8, p-12",
+    "dashboard_grid": "grid-cols-1 md:grid-cols-3 lg:grid-cols-4 gap-4",
+    "card_style": "bg-zinc-900 border border-zinc-800 rounded-sm shadow-none hover:border-zinc-700 transition-colors",
+    "header": "sticky top-0 z-50 backdrop-blur-xl bg-black/60 border-b border-zinc-800",
+    "sidebar": "w-64 border-r border-zinc-800 bg-zinc-950 h-screen fixed"
+  },
+  "components": {
+    "buttons": "rounded-sm font-bold uppercase tracking-wide",
+    "inputs": "rounded-sm border-zinc-800 bg-zinc-950 focus:ring-2 focus:ring-white",
+    "tables": "border-collapse w-full text-sm text-left"
+  },
+  "images": {
+    "login_background": {
+      "url": "https://images.unsplash.com/photo-1643483189749-7b4cbfb7f8f0?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA1MDZ8MHwxfHNlYXJjaHwyfHx3YXJzYXclMjBza3lsaW5lJTIwbmlnaHR8ZW58MHx8fHwxNzc2NDQxNzQzfDA&ixlib=rb-4.1.0&q=85",
+      "description": "Warsaw skyline night for login split screen",
+      "usage": "Right side of the login/auth screens with a dark overlay (bg-black/60) to maintain high contrast."
+    }
+  },
+  "animations": {
+    "hover": "transition-all duration-200 ease-in-out",
+    "page_transition": "animate-in fade-in slide-in-from-bottom-4 duration-500"
+  },
+  "accessibility": {
+    "contrast_strategy": "High contrast black and white primarily, colors used only for semantic meaning (error, success).",
+    "focus_states": "focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-zinc-950",
+    "data_testid_requirement": "All interactive elements MUST include data-testid attribute (e.g., data-testid='login-button')"
+  },
+  "instructions_to_main_agent": [
+    "Strictly adhere to the dark theme colors provided.",
+    "Do not use generic fonts like Inter or Roboto for headings; implement Chivo.",
+    "Ensure the dashboard uses a dense, technical grid layout.",
+    "Buttons should be stark white with black text for primary actions, leaning into the Brutalist Swiss style.",
+    "Integrate the provided Warsaw skyline image on the authentication pages with a heavy dark overlay.",
+    "Ensure language switcher (EN/PL) is prominently placed in the header or sidebar.",
+    "All cards should have sharp corners (rounded-sm maximum) and subtle 1px borders, no soft shadows.",
+    "Implement Lucide React for icons.",
+    "Use Shadcn UI components but override their default rounded corners to match the rounded-sm requirement."
+  ]
+}
